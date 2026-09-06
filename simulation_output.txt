@@ -1,0 +1,35 @@
+LNS format ranges
+LNS8: log2 range [-8.0, 7.875], magnitude range [0.00390625, 234.753]
+LNS16: log2 range [-32.0, 31.998046875], magnitude range [2.32831e-10, 4.28916e+09]
+
+Simulation results
+{'LNS16': {'add_fp32': {'count': 10016,
+                        'max_error': 2.6662057345030736,
+                        'mean_error': 0.001162442868959718},
+           'conversion_fp16': {'count': 10016,
+                               'max_error': 0.0012690355329949238,
+                               'mean_error': 0.0002460045062946906},
+           'conversion_fp32': {'count': 10016,
+                               'max_error': 0.0006770468457449242,
+                               'mean_error': 0.0003405490722703225},
+           'mac_fp32': {'count': 10016,
+                        'max_error': 11918.3310546875,
+                        'mean_error': 1.190865830651735},
+           'multiply_fp32': {'count': 10016,
+                             'max_error': 1.0,
+                             'mean_error': 0.0005515357065764994}},
+ 'LNS8': {'add_fp32': {'count': 10016,
+                       'max_error': 3905.250009862333,
+                       'mean_error': 0.47345224872017305},
+          'conversion_fp16': {'count': 10016,
+                              'max_error': 32767.0,
+                              'mean_error': 1546.6238187896247},
+          'conversion_fp32': {'count': 10016,
+                              'max_error': 38976.42565443983,
+                              'mean_error': 1539.511847285386},
+          'mac_fp32': {'count': 10016,
+                       'max_error': 34359738369.0,
+                       'mean_error': 3430485.7572045485},
+          'multiply_fp32': {'count': 10016,
+                            'max_error': 3905.250009862333,
+                            'mean_error': 0.8672701957599286}}}
